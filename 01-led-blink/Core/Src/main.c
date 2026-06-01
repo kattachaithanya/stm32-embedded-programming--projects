@@ -94,9 +94,11 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    /* USER CODE END WHILE */
+      HAL_GPIO_WritePin(ledpc13_GPIO_Port, ledpc13_Pin, GPIO_PIN_RESET); // LED ON
+      HAL_Delay(500);
 
-    /* USER CODE BEGIN 3 */
+      HAL_GPIO_WritePin(ledpc13_GPIO_Port, ledpc13_Pin, GPIO_PIN_SET);   // LED OFF
+      HAL_Delay(500);
   }
   /* USER CODE END 3 */
 }
