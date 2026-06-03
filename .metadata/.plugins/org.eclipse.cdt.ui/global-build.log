@@ -1,21 +1,28 @@
-07:30:01 **** Incremental Build of configuration Debug for project 02-pattern-led ****
+19:07:33 **** Incremental Build of configuration Debug for project 03_led_control_with_push_button ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "02-pattern-led.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\GIT\stm32-embedded-programming--projects\02-pattern-led\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="02-pattern-led.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 02-pattern-led.elf
+arm-none-eabi-gcc -o "03_led_control_with_push_button.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\GIT\stm32-embedded-programming--projects\03_led_control_with_push_button\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="03_led_control_with_push_button.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 03_led_control_with_push_button.elf
  
-arm-none-eabi-size  02-pattern-led.elf 
-arm-none-eabi-objdump -h -S 02-pattern-led.elf  > "02-pattern-led.list"
+arm-none-eabi-size  03_led_control_with_push_button.elf 
+arm-none-eabi-objdump -h -S 03_led_control_with_push_button.elf  > "03_led_control_with_push_button.list"
    text	   data	    bss	    dec	    hex	filename
-   4728	     12	   1572	   6312	   18a8	02-pattern-led.elf
+   4624	     12	   1572	   6208	   1840	03_led_control_with_push_button.elf
 Finished building: default.size.stdout
  
-Finished building: 02-pattern-led.list
+Finished building: 03_led_control_with_push_button.list
  
-07:30:07 **** Incremental Build of configuration Debug for project 02-pattern-led ****
+19:07:36 **** Incremental Build of configuration Debug for project 03_led_control_with_push_button ****
 make -j8 all 
-arm-none-eabi-size  02-pattern-led.elf 
+arm-none-eabi-size  03_led_control_with_push_button.elf 
    text	   data	    bss	    dec	    hex	filename
-   4728	     12	   1572	   6312	   18a8	02-pattern-led.elf
+   4624	     12	   1572	   6208	   1840	03_led_control_with_push_button.elf
+Finished building: default.size.stdout
+ 
+19:12:41 **** Incremental Build of configuration Debug for project 03_led_control_with_push_button ****
+make -j8 all 
+arm-none-eabi-size  03_led_control_with_push_button.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4624	     12	   1572	   6208	   1840	03_led_control_with_push_button.elf
 Finished building: default.size.stdout
  

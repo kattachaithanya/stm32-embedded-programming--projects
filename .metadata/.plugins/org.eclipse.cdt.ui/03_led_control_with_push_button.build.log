@@ -1,0 +1,10 @@
+19:12:41 **** Incremental Build of configuration Debug for project 03_led_control_with_push_button ****
+make -j8 all 
+arm-none-eabi-size  03_led_control_with_push_button.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4624	     12	   1572	   6208	   1840	03_led_control_with_push_button.elf
+Finished building: default.size.stdout
+ 
+
+19:12:41 Build Finished. 0 errors, 0 warnings. (took 257ms)
+
